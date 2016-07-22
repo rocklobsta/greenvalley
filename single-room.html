@@ -1,139 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link rel="stylesheet" href="css/style.less">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:700' rel='stylesheet' type='text/css'> 
 </head>
 <body>
-
-  <header class="page-header">
-    <div class="page-header__inner">
-      <a href="" class="main-logo"><img src="" alt=""></a>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="">item 01</a></li>
-          <li class="main-nav__item"><a href="">item 02</a></li>
-          <li class="main-nav__item"><a href="">item 03</a></li>
-          <li class="main-nav__item"><a href="">item 04</a></li>
-          <li class="main-nav__item"><a href="">item 05</a></li>
-        </ul>
-        <div class="main-nav__toggler"><span></span></div>
-      </nav>
-      <div class="page-header__contacts"><a href="" class="page-header__phone">+70000000000</a><br>address</div>
-    </div>
-    <a href="" class="btn  btn--icon-calendar"></a>
-  </header>
+    <header class="page-header">
+      <div class="page-header__inner">
+        <a href="index.html" class="main-logo"><img src="img/icons/main-logo.png" alt="Main Logo"></a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link active-link" href="#">номера</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">коттедж</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">ресторан</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">отдых</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">контакты</a></li>
+          </ul>
+          <div class="main-nav__toggler"><span></span></div>
+        </nav>
+        <div class="page-header__contacts"><a href="tel:+78127775588" class="page-header__phone">+7 812 777-55-88</a><br>г. Санкт-Петербург, Приморское ш.600</div>
+        <a href="form.html" class="btn  page-header-btn-calendar"><i class="fa fa-calendar-o" aria-hidden="true"></i>забронировать</a>
+      </div>
+    </header>
 
 <section class="about-room">
         <div class="about-room__header">
-          <h2 class="apartmemt-short-desc__title"></h2>
-          <p class="apartmemt-short-desc__price"><b></b></p>
+          <div class="apartment-short-desc">
+             <h2 class="apartmemt-short-desc__title">Эконом</h2> 
+             <p class="apartment-short-desc__info">от<b> 3400</b> руб./сутки</p> 
+          </div>
         </div>
-    <section class="about-room__information">
-              <section class="room-description">
-                <div class="about-room__wrapper">
-                  <h2 class="room-description__title">О номере</h2>
-                  <p></p>
-                  <h2 class="room-description__title">Удобства</h2>
-                    <ul class="room-description__features-list">
-                    <li class="room-description__item">
-                      <ul>
-                        <li class="room-description__feature"><b>></b>1</li>
-                        <li class="room-description__feature"><b>></b>2</li>
-                        <li class="room-description__feature"><b>></b>3</li>
-                        <li class="room-description__feature"><b>></b>4</li>
-                        <li class="room-description__feature"><b>></b>5</li>                  
-                      </ul>
-                    </li>
-                    <li class="room-description__item">
-                      <ul>
-                        <li class="room-description__feature"><b>></b>6</li>
-                        <li class="room-description__feature"><b>></b>7</li>
-                        <li class="room-description__feature"><b>></b>8</li>
-                        <li class="room-description__feature"><b>></b>9</li>                  
-                      </ul>
-                    </li>
-                    </ul>
-                    <h2 class="room-description__title">В стоимость входит</h2>
-                    <ul class="room-description__what-included">
-                      <li class="room-description__feature"><b>></b></li>
-                      <li class="room-description__feature"><b>></b></li>
-                    </ul> 
-                </div>
-              </section>
-
-              <div class="about-room__slider">
-                <div class="about-room__zoom-icon"> + </div>
-                <ul class="about-room__slider-wrapper">
-                  <li class="about-room__slider-item">
-                    <img src="" alt="">
-                  </li>
-                  <li class="about-room__slider-item">
-                    <img src="" alt="">
-                  </li>
-                  <li class="about-room__slider-item">
-                    <img src="" alt="">
-                  </li>
-                  <li class="about-room__slider-item">
-                    <img src="" alt="">
-                  </li>
-                </ul> 
-              </div> 
-             
-        <div class="about-room__booking">     
-            <a btn  btn--icon-calendar" href="form.html">Забронировать</a>
-            <p class="apartmemt-short-desc__price">от<b>4000</b>руб./сутки</p>
-        </div> 
-    </section>
+  <section class="about-room__information">
+        <div class="about-room__wrapper">
+          <section class="room-description">
+            <h2 class="room-description__title">О номере</h2>
+            <p>В отеле 30 таких номеров площадью от 16 до 20 кв. м. Рассчитаны <br>на проживание 1-2 человек. Часть номеров с видом на Финский залив.</p>
+            <h2 class="room-description__title">Удобства</h2>
+              <ul class="room-description__list-of-features">
+              <li class="room-description__item">
+                <ul>
+                  <li class="room-description__feature"><b>></b> WI-FI</li>
+                  <li class="room-description__feature"><b>></b> Двуспальная кровать</li>
+                  <li class="room-description__feature"><b>></b> Кресло</li>
+                  <li class="room-description__feature"><b>></b> Раскладывающийся диван</li>
+                  <li class="room-description__feature"><b>></b> Фен</li>                  
+                </ul>
+              </li>
+              <li class="room-description__item">
+                <ul>
+                  <li class="room-description__feature"><b>></b> Рабочий стол</li>
+                  <li class="room-description__feature"><b>></b> Шкаф для одежды</li>
+                  <li class="room-description__feature"><b>></b> Багажная тумба</li>
+                  <li class="room-description__feature"><b>></b> Сейф</li>                  
+                </ul>
+              </li>
+              </ul>
+              <h2 class="room-description__title">В стоимость входит</h2>
+              <ul class="room-description__list-of-payments">
+                <li class="room-description__feature"><b>></b> Бассейн с 8.30 до 10.00</li>
+                <li class="room-description__feature"><b>></b> Завтрак и обед «шведский стол»</li>
+              </ul>
+          </section>
+        </div>
+      <div class="about-room__slider">
+        <div class="fotorama"
+          data-width="580"
+          data-height="395"
+          data-nav="false"
+          data-fit="cover"
+          data-nav="thumbs"
+          data-arrows="true"
+          data-click="true"
+          data-swipe="true"
+          data-allowfullscreen="true"
+          data-keyboard="true"
+          data-loop="true">
+          <img src="img/gallery/gallery-1.JPG">
+          <img src="img/gallery/gallery-2.JPG">
+          <img src="img/gallery/gallery-4.JPG">
+        </div>
+      </div> 
+  </section>
+      <div class="about-room__booking">     
+      <a href="form.html" class="btn about-room-btn-calendar"><i class="fa fa-calendar-o" aria-hidden="true"></i>забронировать</a>
+      <p class="apartment-short-desc__info">от<b> 3400</b> руб./сутки</p> 
+    </div> 
 </section>
 
-<section class="accommodation accomodation--grey-bg">
-  <div class="accommodation__inner">
-     <h1 class="accommodation__title">Где вы хотите отдохнуть</h1>
-     <div class="accommodation__item">
-       <div class="accommodation__item-content">
-         <img src="" alt="" class="accommodation__item-picture">
-         <div class="apartment-short-desc">
-           <h2 class="apartmemt-short-desc__title"></h2>
-           <p class="apartment-short-desc__price"><b></b></p>
+<section class="grey-bg-wrap">
+    <div class="accommodation__inner ">
+       <a href="#" class="accommodation__item">
+         <div class="accommodation__item-content">
+      <div class="accommodation__item-picture">
+        <img src="img/content/hotel.jpg" alt="alt">
+      </div>
+           
+           <div class="apartment-short-desc">
+             <h2 class="apartmemt-short-desc__title">Стандарт</h2> 
+             <p class="apartment-short-desc__info">от<b> 4000</b> руб./сутки</p> 
+           </div>
          </div>
-       </div>
-     </div>
-     <div class="accommodation__item">
-       <div class="accommodation__item-content">
-         <img src="" alt="" class="accommodation__item-picture">
-         <div class="apartment-short-desc">
-           <h2 class="apartmemt-short-desc__title"></h2>
-           <p class="apartment-short-desc__price"><b></b></p>
+       </a>
+       <a href="#" class="accommodation__item">
+         <div class="accommodation__item-content">
+      <div class="accommodation__item-picture">
+        <img src="img/content/standart-room.jpeg" alt="alt">
+      </div>
+           
+           <div class="apartment-short-desc">
+             <h2 class="apartmemt-short-desc__title">Стандарт+</h2>
+             <p class="apartment-short-desc__info">от<b> 4500</b> руб./сутки</p>
+           </div>
          </div>
-       </div>
-     </div>
-     <div class="accommodation__item">
-       <div class="accommodation__item-content">
-         <img src="" alt="" class="accommodation__item-picture">
-         <div class="apartment-short-desc">
-           <h2 class="apartmemt-short-desc__title"></h2>
-           <p class="apartment-short-desc__price"><b></b></p>
+       </a>
+       <a href="#" class="accommodation__item">
+         <div class="accommodation__item-content">
+      <div class="accommodation__item-picture">
+        <img src="img/content/lux-room.jpeg" alt="alt">
+      </div>
+           
+           <div class="apartment-short-desc">
+             <h2 class="apartmemt-short-desc__title">Люкс</h2>
+             <p class="apartment-short-desc__info">от<b> 5700</b> руб./сутки</p>
+           </div>
          </div>
-       </div>
-     </div>
-  </div>
- </section>
- 
- <footer>
-  <div class="footer__inner">
-   <div class="footer__address"></div>
-   <div class="footer__logo-block">
-       <a href="" class="main-logo"><img src="" alt=""></a>
-       <ul class="social-icons">
-         <li class="social-icons__item"><a href=""><i class="fa fa-vk"></i></a></li>
-         <li class="social-icons__item"><a href=""><i class="fa fa-instagram"></i></a></li>
-         <li class="social-icons__item"><a href=""><i class="fa fa-facebook-official"></i></a></li>
-       </ul>
+       </a>
+       
     </div>
-   <div class="footer__contacts"><span></span></div>
-  </div> 
- </footer>
+   </section>
+ 
+    <footer>
+    <div class="footer__inner">
+     <div class="footer__address">г.Санкт-Петербург<br>Приморское ш.600</div>
+     <div class="footer__logo-block">
+         <a href="" class="main-logo"><img src="img/icons/main-logo.png" alt="Логотип"></a>
+         <ul class="social-icons">
+           <li class="social-icons__item"><a href=""><i class="fa fa-green fa-vk"></i></a></li>
+           <li class="social-icons__item"><a href=""><i class="fa fa-green fa-instagram"></i></a></li>
+           <li class="social-icons__item"><a href=""><i class="fa fa-green fa-facebook-official"></i></a></li>
+         </ul>
+      </div>
+     <div class="footer__contacts"><a href="tel:+7812775588">+7 812 77-55-88</a><br><a href="mailto:info@greenvalley.ru">info@greenvalley.ru</a></div>
+    </div>
+   </footer>
+
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <script src="js/jquery-migrate-1.4.1.min.js"></script>
+   <!-- Fotorama gallery -->
+  <script src="fotorama-4.6.4/fotorama.js"></script>
 </body>
 </html>
 

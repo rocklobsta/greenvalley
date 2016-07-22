@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>P</title>
+  <link rel="stylesheet" href="css/style.less">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
+  <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:700' rel='stylesheet' type='text/css'> 
+</head>
+<body>
+    <header class="page-header">
+      <div class="page-header__inner">
+        <a href="index.html" class="main-logo"><img src="img/icons/main-logo.png" alt="Main Logo"></a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link active-link" href="#">номера</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">коттедж</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">ресторан</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">отдых</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">контакты</a></li>
+          </ul>
+          <div class="main-nav__toggler"><span></span></div>
+        </nav>
+        <div class="page-header__contacts"><a href="tel:+78127775588" class="page-header__phone">+7 812 777-55-88</a><br>г. Санкт-Петербург, Приморское ш.600</div>
+        <a href="form.html" class="btn page-header-btn-calendar"><i class="fa fa-calendar-o" aria-hidden="true"></i>забронировать</a>
+      </div>
+    </header>
+
+
+  <div class="booking">
+   <h1 class="booking__title">Бронирование</h1>
+   <p class="booking__desc">Чтобы забронировать номер в отеле или котедж,<br> заполните форму ниже или просто позвоните<br> по телефону: <b>+7 812 777-55-88</b></p>
+  </div>
+  <form>
+    <section class="step-block bg--grey">
+      <div class="step-block__wrapper">
+        <h1 class="step-block__title--step-num">шаг 1</h1>
+        <h2 class="step-block__title--block-name">Дата отдыха</h2>
+        <ul class="date-set">
+          <li class="date-set__item">
+            <label for="" class="date-set__item-title">дата въезда</label><br>
+            <input type="text" name="" id="dayOfArrive" maxlength="2" placeholder="ДД">
+            <input type="text" name="" id="monthOfArrive" maxlength="2" placeholder="ММ">
+            <input type="text" name="" id="yearOfArrive" maxlength="4" placeholder="ГГГГ">
+          </li>
+          <li class="date-set__item">
+            <label for="" class="date-set__item-title">дата выезда</label><br>
+            <input type="text" name="" id="dayOfDepart" maxlength="2" placeholder="ДД">
+            <input type="text" name="" id="monthOfDepart" maxlength="2" placeholder="ММ">
+            <input type="text" name="" id="yearOfDepart" maxlength="4" placeholder="ГГГГ">
+          </li>
+        </ul>
+      </div>  
+    </section>
+    <section class="step-block">
+      <div class="step-block__wrapper">
+        <h1 class="step-block__title--step-num">шаг 2</h1>
+        <h2 class="step-block__title--block-name">Место проживания</h2>
+        <ul class="place-of-living">
+          <li class="place-of-living__item">
+             <label for="">
+              <input type="radio" name="place-of-living" checked>
+                <span class="place-of-living__item-title">Отель</span>
+             </label>
+          </li>
+          <li class="place-of-living__item">
+             <label for="">
+              <input type="radio" name="place-of-living">
+                <span class="place-of-living__item-title">Коттедж</span>
+             </label>
+          </li>
+        </ul>
+      </div>  
+    </section>
+    <section class="step-block bg--grey">
+      <div class="step-block__wrapper">
+        <h1 class="step-block__title--step-num">шаг 3</h1>
+        <h2 class="step-block__title--block-name">Тип коттеджа</h2>
+        <ul class="cottage-type">
+          <li class="cottage-type__item">
+             <label for="">
+              <input type="radio" name="place-of-living" checked>
+                <span class="cottage-type__item-title">Флагман</span>
+             </label>
+          </li>
+          <li class="cottage-type__item">
+             <label for="">
+              <input type="radio" name="place-of-living">
+                <span class="cottage-type__item-title">Озерный</span>
+             </label>
+          </li>
+          <li class="cottage-type__item">
+             <label for="">
+              <input type="radio" name="place-of-living">
+                <span class="cottage-type__item-title">Портовый</span>
+             </label>
+          </li>
+          <li class="cottage-type__item">
+             <label for="">
+              <input type="radio" name="place-of-living">
+                <span class="cottage-type__item-title">Ольховка</span>
+             </label>
+          </li>
+        </ul>
+      </div>  
+    </section>
+  </form>
+
+   <footer class="page-footer">
+    <div class="footer__inner">
+     <div class="footer__address">г.Санкт-Петербург<br>Приморское ш.600</div>
+     <div class="footer__logo-block">
+         <a href="" class="main-logo"><img src="img/icons/main-logo.png" alt="Логотип"></a>
+         <ul class="social-icons">
+           <li class="social-icons__item"><a target="_blank" href="http://www.vk.com"><i class="fa fa-green fa-vk"></i></a></li>
+           <li class="social-icons__item"><a target="_blank" href="http://www.instagram.com"><i class="fa fa-green fa-instagram"></i></a></li>
+           <li class="social-icons__item"><a target="_blank" href="http://www.facebook.com"><i class="fa fa-green fa-facebook-official"></i></a></li>
+         </ul>
+      </div>
+     <div class="footer__contacts"><a href="tel:+7812775588">+7 812 77-55-88</a><br><a href="mailto:info@greenvalley.ru">info@greenvalley.ru</a></div>
+    </div>
+   </footer>
+
+</body>
+</html> 
