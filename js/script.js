@@ -38,7 +38,7 @@ $(document).ready(function(){
     carousel_3.trigger('to.owl.carousel', 1);
   });
   
-  Разворачиваем отзывы
+  // Разворачиваем отзывы
    $('#showAllReviews').on('click', function(e){
       e.preventDefault();
       $("#review-carousel").data('owlCarousel').destroy();
