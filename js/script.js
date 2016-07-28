@@ -3,10 +3,14 @@ $(document).ready(function(){
   // Находим в ДОМе элементы для карусели
   var carousel_1 = $('#slider-promo-bg');
   var carousel_2 = $('#slider-promo-list');
+  var carousel_3 = $('#review-carousel');
+  var carousel_4 = $('#offersSlider');
 
   // Инициируем карусели
   carousel_1.owlCarousel({ items: 1 });
   carousel_2.owlCarousel({ items: 1 });
+  carousel_3.owlCarousel({ items: 2 });
+  carousel_4.owlCarousel({ items: 1 });
 
   // Следим за кликом на первой ссылке-переключаетеле
   $('#promo-family').on('click', function(e){
@@ -20,6 +24,35 @@ $(document).ready(function(){
     e.preventDefault();
     carousel_1.trigger('to.owl.carousel', 1);
     carousel_2.trigger('to.owl.carousel', 1);
+  });
+  
+  //Следим за стрелкой влево в отзывах
+    $('#feedbackLeft').on('click', function(e){
+    e.preventDefault();
+    carousel_3.trigger('to.owl.carousel', 0);
+  });
+
+    //Следим за стрелкой вправо в отзывах
+    $('#feedbackRight').on('click', function(e){
+    e.preventDefault();
+    carousel_3.trigger('to.owl.carousel', 1);
+  });
+  
+  //Разворачиваем отзывы
+  //  $('#showAllReviews').on('click', function(e){
+  //     e.preventDefault();
+  //     $("#review-carousel").data('owlCarousel').destroy();
+  // });
+
+  //Акции и предложения
+    $('#btnOffersLeft').on('click', function(e){
+    e.preventDefault();
+    carousel_4.trigger('to.owl.carousel', 0);
+  });
+  
+    $('#btnOffersRight').on('click', function(e){
+    e.preventDefault();
+    carousel_4.trigger('to.owl.carousel', 1);
   });
 
   // Карусель отзывов

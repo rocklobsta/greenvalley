@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="css/style.less">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
   <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
@@ -160,15 +160,17 @@
           <a href="http://vk.com"><i class="fa fa-vk"></i></a><br>
           Наша семья счастлива, что открыла для себя Green Valley. Замечательный, комфортный отдых. Хорошее место, приветливый персонал, вкусная еда. Стали постоянными гостями!<br> 
           <p>Дата отдыха:<br>01.06.2015 - 08.06.2015</p> 
-        </div> 
-        
+        </div>  
       </div>
-      <a href="#" class="feedback__button">все отзывы</a>
+      <a href="#" class="feedback__button" id="showAllReviews">все отзывы</a>
+      <a class="feedback-slide-btn btn-arrow--left" href="#" id="feedbackLeft"></a>
+      <a class="feedback-slide-btn btn-arrow--right" href="#" id="feedbackRight"></a> 
   </section>
 
    <section class="offers">
      <h1 class="offers__title">Акции и предложения</h1>
-     <div class="offers__slider-wrapper">
+    <div class="offers__slider-wrapper">
+     <div class="owl-carousel" id="offersSlider">
        <div class="offers__slide">
          <div class="offers__slide-text">
            <h2 class="offers__slide-title">Скидки в мае</h2>
@@ -176,17 +178,18 @@
 скидку 10% !</p>
        </div>
        </div>
-<!--        <div class="offers__slide">
+       <div class="offers__slide">
          <div class="offers__slide-text">
            <h2 class="offers__slide-title">Скидки в мае</h2>
-           <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Предупредила себя родного сих безопасную. Жизни сбить повстречался снова вдали всеми вершину ручеек путь имени, оксмокс, то что, продолжил бросил?</p>
+           <p>Забронируйте номер или коттедж любой категории до 31 июня и получите
+скидку 10% !</p>
        </div>
-       </div> -->
-       <ul class="offers__slider-pagination">
-         <li class="offers__slider-pagination-dot dot-active"><a href="#"></a></li>
-         <li class="offers__slider-pagination-dot"><a href="#"></a></li>
-       </ul>
+       </div>
+    </div>
+
      </div>
+         <a class="offers__slider-pagination-dot dot-active" href="#" id="btnOffersLeft"></a></li>
+         <a class="offers__slider-pagination-dot" href="#" id="btnOffersRight"></a></li>
    </section>
 
    <section class="pass">

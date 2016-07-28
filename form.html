@@ -3,10 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>P</title>
-  <link rel="stylesheet" href="css/style.less">
-  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-  <link rel="stylesheet" href="fotorama-4.6.4/fotorama.css">
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:700' rel='stylesheet' type='text/css'> 
 </head>
@@ -37,7 +35,7 @@
   <form>
     <section class="step-block bg--grey">
       <div class="step-block__wrapper">
-        <h1 class="step-block__title--step-num">шаг 1</h1>
+        <h1 class="step-block__title--step-num" id="date-set-step">шаг 1</h1>
         <h2 class="step-block__title--block-name">Дата отдыха</h2>
         <ul class="date-set">
           <li class="date-set__item">
@@ -61,14 +59,14 @@
         <h2 class="step-block__title--block-name">Место проживания</h2>
         <ul class="place-of-living">
           <li class="place-of-living__item">
-             <label for="">
-              <input type="radio" name="place-of-living" checked>
+             <label for="hotel">
+              <input type="radio" name="place-of-living" id="hotel" checked>
                 <span class="place-of-living__item-title">Отель</span>
              </label>
           </li>
           <li class="place-of-living__item">
-             <label for="">
-              <input type="radio" name="place-of-living">
+             <label for="cottage">
+              <input type="radio" name="place-of-living" id="cottage">
                 <span class="place-of-living__item-title">Коттедж</span>
              </label>
           </li>
@@ -81,30 +79,114 @@
         <h2 class="step-block__title--block-name">Тип коттеджа</h2>
         <ul class="cottage-type">
           <li class="cottage-type__item">
-             <label for="">
-              <input type="radio" name="place-of-living" checked>
+             <label for="flagman">
+              <input type="radio" name="place-description" id="flagman">
                 <span class="cottage-type__item-title">Флагман</span>
              </label>
           </li>
           <li class="cottage-type__item">
-             <label for="">
-              <input type="radio" name="place-of-living">
+             <label for="ozerny">
+              <input type="radio" name="place-description" id="ozerny">
                 <span class="cottage-type__item-title">Озерный</span>
              </label>
           </li>
           <li class="cottage-type__item">
-             <label for="">
-              <input type="radio" name="place-of-living">
+             <label for="port">
+              <input type="radio" name="place-description" id="port">
                 <span class="cottage-type__item-title">Портовый</span>
              </label>
           </li>
           <li class="cottage-type__item">
-             <label for="">
-              <input type="radio" name="place-of-living">
+             <label for="olhovka">
+              <input type="radio" name="place-description" id="olhovka">
                 <span class="cottage-type__item-title">Ольховка</span>
              </label>
           </li>
         </ul>
+      </div>
+      <div class="house-decs">
+        <ul class="house-desc__list">
+          <li class="house-desc__list-item"><span>площадь<br>100м<sup>2</sup></span></li>
+          <li class="house-desc__list-item"><span>3 комнаты</span></li>
+          <li class="house-desc__list-item"><span>5 спальных<br>мест</span></li>
+          <li class="house-desc__list-item"><span>раздельный<br>санузел</span></li>
+          <li class="house-desc__list-item"><span>wi-fi</span></li>
+        </ul>
+      </div>
+<!--       <div class="house-decs">
+        <ul class="house-desc__list">
+          <li class="house-desc__list-item"><span>площадь<br>250м<sup>2</sup></span></li>
+          <li class="house-desc__list-item"><span>5 комнат</span></li>
+          <li class="house-desc__list-item"><span>10 спальных<br>мест</span></li>
+          <li class="house-desc__list-item"><span>раздельный<br>санузел</span></li>
+          <li class="house-desc__list-item"><span>wi-fi</span></li>
+        </ul>
+      </div> -->
+    </section>
+    <section class="step-block">
+      <div class="step-block__wrapper">
+        <h1 class="step-block__title--step-num">шаг 4</h1>
+        <h2 class="step-block__title--block-name">Персональная информация</h2>
+        <div class="personal-info__wrapper">
+          <ul class="personal-info__list">
+            <li class="personal-info__list-item"><span></span><input type="text" placeholder="имя" id="personName"></li>
+            <li class="personal-info__list-item"><span></span><input type="number" placeholder="номер телефона" id="phoneNumber"></li>
+            <li class="personal-info__list-item">Мы свяжемся с вами в случае необходимости</li>
+          </ul>
+          <ul class="personal-info__list">
+            <li class="personal-info__list-item"><span></span><input type="text" placeholder="фамилия" id="surname"></li>
+            <li class="personal-info__list-item"><span></span><input type="email" placeholder="e-mail" id="email"></li>
+            <li class="personal-info__list-item">На этот адрес мы вышлем вам подтверждение
+            о забронированном номере.</li>
+          </ul>
+        </div>  
+      </div>  
+    </section>
+    <section class="step-block bg--grey">
+      <div class="step-block__wrapper">
+        <h1 class="step-block__title--step-num">шаг 5</h1>
+        <h2 class="step-block__title--block-name">Способ оплаты</h2>
+        <div class="payment-wrapper">  
+          <div class="summary-price">
+            <h2 class="summary-price__title">к оплате</h2>
+            <span id="summary">-</span>
+            <p><i class="fa fa-exclamation-circle" aria-hidden="true"></i>Пожалуйста, <a class="summary-price-link" href="#date-set-step">выберите дату</a> въезда и выезда, чтобы увидеть сумму к оплате</p>
+          </div>
+          <div class="time-payment__wrapper">
+            <div class="time-payment__on-place">
+              <div class="time-payment__detail">
+                <label for="paymentOnPlace">
+                  <input type="radio" id="paymentOnPlace" name="payment-type" checked>
+                  <span class="payment-on-place__choise">По приезду</span>
+                </label>
+                <p class="time-payment__desc">Вы можете произвести оплату по факту заселения.</p>
+              </div>
+            </div>
+            <div class="time-payment__now">
+              <div class="time-payment__detail">
+                <label for="paymentNow">
+                  <input type="radio" id="paymentNow" name="payment-type" >
+                  <span class="payment-on-place__choise desc-to-right">Сейчас</span>
+                </label>
+                <p class="time-payment__desc">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+              </div>
+              <div class="card__col-left">
+                <label for="card-number">номер карты</label>
+                <input type="number" id="cardNumber" placeholder="0000-0000-0000-0000">
+                <label for="card-number">фамилия владельца карты</label>
+                <input type="text" id="cardholderName" placeholder="VLADIMIR PUTIN">
+              </div>
+              <div class="card__col-right">
+                <label for="card-number">код cvv<i class="fa fa-question-circle" aria-hidden="true"></i></label>
+                <input type="number" id="cvv" placeholder="123">
+                <label for="card-number">действует до</label>
+                <input type="text" id="validThru" placeholder="01/2018">
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <a class="order-button" href="">забронировать</a>
       </div>  
     </section>
   </form>
@@ -113,7 +195,7 @@
     <div class="footer__inner">
      <div class="footer__address">г.Санкт-Петербург<br>Приморское ш.600</div>
      <div class="footer__logo-block">
-         <a href="" class="main-logo"><img src="img/icons/main-logo.png" alt="Логотип"></a>
+         <a href="index.html" class="main-logo"><img src="img/icons/main-logo.png" alt="Логотип"></a>
          <ul class="social-icons">
            <li class="social-icons__item"><a target="_blank" href="http://www.vk.com"><i class="fa fa-green fa-vk"></i></a></li>
            <li class="social-icons__item"><a target="_blank" href="http://www.instagram.com"><i class="fa fa-green fa-instagram"></i></a></li>
