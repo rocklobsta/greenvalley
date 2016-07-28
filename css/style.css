@@ -113,10 +113,6 @@ body {
 	margin-bottom: 80px;
 }
 
-.no-list-style{
-	list-style-type: none;
-} 
-
 .relax__tab-link{
 	font-family: 'Fira Sans', Helvetica, Arial;
 	font-size: 14px;
@@ -125,9 +121,19 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	position: relative;
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
-.relax__tab-link:hover:after{
+.relax__tab-link:focus{
+	color: #ff7435;
+}
+
+.relax__tab-link:hover{
+	color: #ff7435;
+}
+
+.relax__tab-link:focus:after{
 	content: '';
 	position: absolute;
     height: 2px;
@@ -139,14 +145,8 @@ body {
 	margin: auto;
 }
 
-.relax__tab-link:hover{
-	color: #ff7435;
-}
 
-.relax__tab-link--active{
-	color: #ff7435;
-	margin-right: 35px;
-}
+
 
 .relax__slider-options{
 	width: 1200px;
@@ -256,6 +256,7 @@ body {
 	font-size: 30px;
 	color: #ffffff;
 	padding-top: 55px;
+	font-weight: 300;
 }
 
 .feedback-item{
@@ -355,13 +356,6 @@ padding-bottom: 30px;
 	margin: 0;
 }
 
-// .offers__slider-pagination{
-// 	text-align: center;
-// 	padding-left: 0;
-// 	margin-top: 10px;
-// 	font-size: 0;
-// }
-
 .offers__slider-pagination-dot{
 	text-align: center;
 	list-style-type: none;
@@ -372,10 +366,9 @@ padding-bottom: 30px;
 	display: inline-block;
 	margin: 10px;
 	margin-top: 20px;
-	// cursor: pointer;
 }
 
-.dot-active{
+.offers__slider-pagination-dot:focus{
 	background-color: #ff7435;
 }
 
@@ -431,17 +424,11 @@ padding-bottom: 30px;
     transform: translate(-50%);
 }
 
-.transport__title:before:nth-child(2){
-	content: '';
-    display: inline-block;
-    width: 50px;
-    height: 29px;
+.transport__item:nth-child(2)
+.transport__title:before{
+	width: 60px;
+	top:0px;
     background-image: url(../img/icons/electro.png);
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -2px;
-    left: 50%;
-    transform: translate(-50%);
 }
 
 .transport__item{
@@ -484,7 +471,6 @@ padding-bottom: 30px;
 	display: flex;
 	flex-wrap:wrap;
 	justify-content:center;
-	// margin-top: 35px;
 }
 
 .accommodation__item{
@@ -606,6 +592,10 @@ padding-bottom: 30px;
 	font-size: 16px;
 }
 
+.room-description__feature b{
+	color: #FF7435;
+}
+
 .room-description__list-of-features, 
 .room-description__list-of-payments, 
 .room-description ul {
@@ -681,7 +671,6 @@ padding-bottom: 30px;
 }
 
 .categories-list{
-	// max-width: 1200px;
 	margin: auto;
 	text-align: center;
 }
@@ -705,7 +694,6 @@ padding-bottom: 30px;
 .categories-list__item-desc{
 	width: 600px;
 	background-color: #fafafa;
-	// margin-right: 10px;
 	font-size: 0;
 	float: left;
 	display: inline-block;
@@ -789,7 +777,7 @@ padding-bottom: 30px;
   background-color: #f3f3f3;
 }
 
-/*--------------------------*/
+/*---------FORM----------*/
 
 .step-block{
 	margin: auto;
