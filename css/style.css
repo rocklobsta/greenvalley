@@ -256,7 +256,6 @@ body {
 	font-size: 30px;
 	color: #ffffff;
 	padding-top: 55px;
-	margin-bottom: 50px;
 }
 
 .feedback-item{
@@ -264,7 +263,7 @@ body {
 	background-color: #fff;
 	font-size: 16px;
 	padding: 0px 30px;
-	margin: 0px 10px 55px 10px;
+	margin: 40px 10px 55px 10px;
 }
 .feedback-item__author-avatar{
 	width: 78px;
