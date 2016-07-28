@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="less/grid.less">
+  <!-- <link rel="stylesheet" href="less/grid.less"> -->
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=PT+Sans+Caption:700' rel='stylesheet' type='text/css'> 
@@ -80,32 +80,32 @@
         <h2 class="step-block__title--block-name">Тип коттеджа</h2>
         <ul class="cottage-type">
           <li class="cottage-type__item">
-             <label for="flagman">
+             <label class="cottage__choise" for="flagman">
               <input type="radio" name="place-description" id="flagman">
                 <span class="cottage-type__item-title">Флагман</span>
              </label>
           </li>
           <li class="cottage-type__item">
-             <label for="ozerny">
+             <label class="cottage__choise" for="ozerny">
               <input type="radio" name="place-description" id="ozerny">
                 <span class="cottage-type__item-title">Озерный</span>
              </label>
           </li>
           <li class="cottage-type__item">
-             <label for="port">
+             <label class="cottage__choise" for="port">
               <input type="radio" name="place-description" id="port">
                 <span class="cottage-type__item-title">Портовый</span>
              </label>
           </li>
           <li class="cottage-type__item">
-             <label for="olhovka">
+             <label class="cottage__choise" for="olhovka">
               <input type="radio" name="place-description" id="olhovka">
                 <span class="cottage-type__item-title">Ольховка</span>
              </label>
           </li>
         </ul>
       </div>
-      <div class="house-decs">
+      <div class="house-decs" id="house-desc__flagman">
         <ul class="house-desc__list">
           <li class="house-desc__list-item"><span>площадь<br>100м<sup>2</sup></span></li>
           <li class="house-desc__list-item"><span>3 комнаты</span></li>
@@ -114,7 +114,7 @@
           <li class="house-desc__list-item"><span>wi-fi</span></li>
         </ul>
       </div>
-<!--       <div class="house-decs">
+      <div class="house-decs" id="house-desc__ozerny">
         <ul class="house-desc__list">
           <li class="house-desc__list-item"><span>площадь<br>250м<sup>2</sup></span></li>
           <li class="house-desc__list-item"><span>5 комнат</span></li>
@@ -122,7 +122,7 @@
           <li class="house-desc__list-item"><span>раздельный<br>санузел</span></li>
           <li class="house-desc__list-item"><span>wi-fi</span></li>
         </ul>
-      </div> -->
+      </div>
     </section>
     <section class="step-block">
       <div class="step-block__wrapper">
@@ -206,6 +206,6 @@
      <div class="footer__contacts"><a href="tel:+7812775588">+7 812 77-55-88</a><br><a href="mailto:info@greenvalley.ru">info@greenvalley.ru</a></div>
     </div>
    </footer>
-
+ <script src="js/script.js"></script>
 </body>
 </html> 
