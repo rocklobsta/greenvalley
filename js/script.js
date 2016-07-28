@@ -38,11 +38,6 @@ $(document).ready(function(){
     carousel_3.trigger('to.owl.carousel', 1);
   });
   
-  // Разворачиваем отзывы
-   $('#showAllReviews').on('click', function(e){
-      e.preventDefault();
-      $("#review-carousel").data('owlCarousel').destroy();
-  });
 
   //Акции и предложения
     $('#btnOffersLeft').on('click', function(e){
@@ -70,21 +65,48 @@ $(document).ready(function(){
   // Сразу после загрузки страницы тоже проверяем
   reviewCarouselTrigger();
 
-  // Функция проверки необходимости включить/выключить карусель
+  function killEmAll(killEmAll){
+  killEmAll
+  .trigger('destroy.owl.carousel')
+  .removeClass('owl-carousel owl-loaded')
+  .find('.owl-stage-outer')
+  .children()
+  .unwrap(); 
+  $('.feedback-slide-btn').hide();
+  }
+
+  function UnKillThis(UnKillThis){
+  UnKillThis
+  .owlCarousel({ 
+  items: 2,
+  });
+  $('.feedback-slide-btn').show();
+  }
+
+  // Разворачиваем/сворачиваем отзывы
+  $('#showAllReviews').on('click', function(e){
+  e.preventDefault();
+
+  $(this)
+  .toggleClass('allStuff');
+
+  if ($("#showAllReviews").hasClass("allStuff")) {
+  killEmAll(reviewCarousel);
+  } else{
+  UnKillThis(reviewCarousel);
+  }
+
+  });
+
   function reviewCarouselTrigger() {
-    if ($('body').outerWidth() >= 1200) {
-      reviewCarousel.owlCarousel({ 
-        items: 2
-       });
-    }
-    else {
-      reviewCarousel
-        .trigger('destroy.owl.carousel')
-        .removeClass('owl-carousel owl-loaded')
-        .find('.owl-stage-outer')
-        .children()
-        .unwrap();
-    }
+  if ($('body').outerWidth() >= 1200) {
+  reviewCarousel.owlCarousel({ 
+  items: 2
+  });
+  }
+  else {
+  killEmAll(reviewCarousel);
+  }
   }
 
 });
