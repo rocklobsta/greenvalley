@@ -1,7 +1,7 @@
   $(document).ready(function(){
-  var hideItem = $('.house-desc'),
-  activeSelect = $('#flagman'),
-  firstShow = $('#house-desc__flagman');
+  var hideItem = $('.house-decs'),
+  activeSelect = $(),
+  firstShow = $();
 
   hideItem.hide();
   firstShow.show();

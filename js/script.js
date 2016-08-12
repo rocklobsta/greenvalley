@@ -62,26 +62,26 @@ $(document).ready(function(){
     reviewInitTimeCounter = setTimeout(reviewCarouselTrigger, 100); // Установим время срабатывания
   });
 
-  // Сразу после загрузки страницы тоже проверяем
-  reviewCarouselTrigger();
+  // // Сразу после загрузки страницы тоже проверяем
+  // reviewCarouselTrigger();
 
-  function killEmAll(killEmAll){
-  killEmAll
-  .trigger('destroy.owl.carousel')
-  .removeClass('owl-carousel owl-loaded')
-  .find('.owl-stage-outer')
-  .children()
-  .unwrap(); 
-  $('.feedback-slide-btn').hide();
-  }
+  // function killEmAll(killEmAll){
+  // killEmAll
+  // .trigger('destroy.owl.carousel')
+  // .removeClass('owl-carousel owl-loaded')
+  // .find('.owl-stage-outer')
+  // .children()
+  // .unwrap(); 
+  // $('.feedback-slide-btn').hide();
+  // }
 
-  function UnKillThis(UnKillThis){
-  UnKillThis
-  .owlCarousel({ 
-  items: 2,
-  });
-  $('.feedback-slide-btn').show();
-  }
+  // function UnKillThis(UnKillThis){
+  // UnKillThis
+  // .owlCarousel({ 
+  // items: 2,
+  // });
+  // $('.feedback-slide-btn').show();
+  // }
 
   // Разворачиваем/сворачиваем отзывы
   $('#showAllReviews').on('click', function(e){
@@ -108,22 +108,4 @@ $(document).ready(function(){
   killEmAll(reviewCarousel);
   }
   }
-
-// Переключатель коттеджей
-
-  var hideItem = $('.house-desc'),
-  activeSelect = $('#flagman'),
-  firstShow = $('#house-desc__flagman');
-
-  hideItem.hide();
-  firstShow.show();
-  activeSelect.attr('checked', 'checked');
-
-  $('.cottage__choise').on('click', function(){ 
-  var forData = $(this).attr('for'),
-  showItem = '#house-desc__'+forData;
-
-  $(hideItem).hide();
-  $(showItem).show();
-  });
 });

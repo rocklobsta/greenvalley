@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="less/grid.less">
   <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
@@ -31,57 +32,77 @@
       <h1 class="numbers-promo-block__title">Номера в отеле Green Valley</h1>
       <p class="numbers-promo-block__desc">Комфорт и живописный вид на Финский залив и сосновый парк.<br>4 этажа | 70 номеров</p>
     </div>
-          <section class="categories-list">
-        <h1 class="categories-list__title">Категории</h1>
-        <div class="categories-list__item">
-          <div class="categories-list__item-desc">
-            <h2 class="apartmemt-short-desc__title">Эконом</h2> 
-             <p class="apartment-short-desc__info">от<b> 3400</b> руб./сутки</p> 
-             <p class="categories-list__item-desc-text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. <br>Рассчитаны на проживание 1-2 человек.<br>
-             Часть номеров с видом на Финский залив.</p>
-             <div class="categories-list__item-order"><a href="form.html" class="btn  page-header-btn-calendar">забронировать</a><a href="single-room.html" class="more-btn">подробнее</a></div> 
-          </div>
-          <div class="categories-list__item-image">
-            <img src="img/content/econom-room-list.jpeg" alt="">
-          </div>
-        </div>
-        <div class="categories-list__item">
-          <div class="categories-list__item-desc">
-            <h2 class="apartmemt-short-desc__title">Эконом</h2> 
-             <p class="apartment-short-desc__info">от<b> 3400</b> руб./сутки</p> 
-             <p class="categories-list__item-desc-text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. <br>Рассчитаны на проживание 1-2 человек.<br>
-             Часть номеров с видом на Финский залив.</p>
-             <div class="categories-list__item-order"><a href="form.html" class="btn  page-header-btn-calendar">забронировать</a><a href="single-room.html" class="more-btn">подробнее</a></div> 
-          </div>
-          <div class="categories-list__item-image">
-            <img src="img/content/hotel.jpg" alt="">
-          </div>
-        </div>
-        <div class="categories-list__item">
-          <div class="categories-list__item-desc">
-            <h2 class="apartmemt-short-desc__title">Эконом</h2> 
-             <p class="apartment-short-desc__info">от<b> 3400</b> руб./сутки</p> 
-             <p class="categories-list__item-desc-text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. <br>Рассчитаны на проживание 1-2 человек.<br>
-             Часть номеров с видом на Финский залив.</p>
-             <div class="categories-list__item-order"><a href="form.html" class="btn  page-header-btn-calendar">забронировать</a><a href="single-room.html" class="more-btn">подробнее</a></div> 
-          </div>
-          <div class="categories-list__item-image">
-             <img src="img/content/lux-room.jpeg" alt="">       
-          </div>
-        </div>
-        <div class="categories-list__item">
-          <div class="categories-list__item-desc">
-            <h2 class="apartmemt-short-desc__title">Эконом</h2> 
-             <p class="apartment-short-desc__info">от<b> 3400</b> руб./сутки</p> 
-             <p class="categories-list__item-desc-text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. <br>Рассчитаны на проживание 1-2 человек.<br>
-             Часть номеров с видом на Финский залив.</p>
-             <div class="categories-list__item-order"><a href="form.html" class="btn  page-header-btn-calendar">забронировать</a><a href="single-room.html" class="more-btn">подробнее</a></div> 
-          </div>
-          <div class="categories-list__item-image">
-             <img src="img/content/standart-room.jpeg" alt="">     
-          </div>
-        </div>
-      </section>
+    <section class="categories"> 
+      <h1 class="categories__title">Категории</h1> 
+      <div class="categories__inner">
+         <ul class="categories__list">
+           <li class="categories__item">
+             <div class="categories__item-desc">
+               <div class="price-info">
+                 <h2 class="apartmemt-short-desc__title">Эконом</h2> 
+                 <p class="apartment-short-desc__info">от<b> 3400</b> руб./сутки</p> 
+               </div>
+               <div class="categories__item-img">
+                 <img src="img/content/econom-room-list.jpeg" alt="">
+               </div>
+               <p class="categories__item-desc-text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек.Часть номеров с видом на Финский залив.</p>
+               <div class="categories__item-order">
+                 <a href="form.html" class="btn page-header-btn-calendar">забронировать</a>
+                 <a href="single-room.html" class="more-btn">подробнее</a>
+               </div>
+             </div>
+           </li>
+           <li class="categories__item">
+             <div class="categories__item-desc">
+               <div class="price-info">
+                 <h2 class="apartmemt-short-desc__title">Стандарт</h2> 
+                 <p class="apartment-short-desc__info">от<b> 4000</b> руб./сутки</p> 
+               </div>
+               <div class="categories__item-img">
+                 <img src="img/content/hotel.jpg" alt="">
+               </div>
+               <p class="categories__item-desc-text">В отеле 30 таких номеров площадью от 16 до 20 кв.м.Рассчитаны на проживание 1-2 человек.Часть номеров с видом на Финский залив.</p>
+               <div class="categories__item-order">
+                 <a href="form.html" class="btn page-header-btn-calendar">забронировать</a> 
+                 <a href="single-room.html" class="more-btn">подробнее</a>
+               </div>
+             </div>
+           </li>
+           <li class="categories__item">
+             <div class="categories__item-desc">
+               <div class="price-info">
+                 <h2 class="apartmemt-short-desc__title">Стандарт +</h2> 
+                 <p class="apartment-short-desc__info">от<b> 4500</b> руб./сутки</p> 
+               </div>
+               <div class="categories__item-img">
+                 <img src="img/content/standart-room.jpeg" alt="">
+               </div>
+               <p class="categories__item-desc-text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек.Часть номеров с видом на Финский залив.</p>
+               <div class="categories__item-order">
+                 <a href="form.html" class="btn page-header-btn-calendar">забронировать</a>
+                 <a href="single-room.html" class="more-btn">подробнее</a>
+               </div>
+             </div>
+           </li>
+           <li class="categories__item">
+             <div class="categories__item-desc">
+               <div class="price-info">
+                 <h2 class="apartmemt-short-desc__title">Люкс</h2> 
+                 <p class="apartment-short-desc__info">от<b> 5700</b> руб./сутки</p> 
+               </div>
+               <div class="categories__item-img">
+                 <img src="img/content/lux-room.jpeg" alt="">
+               </div>
+               <p class="categories__item-desc-text">В отеле 30 таких номеров площадью от 16 до 20 кв.м. Рассчитаны на проживание 1-2 человек.Часть номеров с видом на Финский залив.</p>
+               <div class="categories__item-order">
+                 <a href="form.html" class="btn page-header-btn-calendar">забронировать</a>
+                 <a href="single-room.html" class="more-btn">подробнее</a>
+               </div>
+             </div>
+           </li>
+         </ul>
+       </div>
+    </section>
 
     <footer class="page-footer">
     <div class="footer__inner">

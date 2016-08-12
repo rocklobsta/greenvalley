@@ -1,7 +1,12 @@
+*{
+	box-sizing: border-box;
+}
 li{
 	list-style-type: none;
 }
-
+ul{
+	padding-left: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -23,9 +28,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 1200px;
+	padding: 0 10px;
+    width: 1180px;
 }
 
 .main-logo{
@@ -80,7 +84,8 @@ body {
 }
 
 .relax__slider-images-item{
-	width: 1200px;
+	width: 1180px;
+	padding: 0 10px;
 	margin: 0 auto;
 }
 
@@ -104,12 +109,11 @@ body {
 }
 
 .relax__tabs{
-	width: 1200px;
-	margin: 0 auto;
+	width: 1180px;
+	margin: auto;
 	display: flex;
 	justify-content:center;
-	padding-top: 40px;
-	padding-left: 0;
+	padding: 40px 10px 0 10px;
 	margin-bottom: 80px;
 }
 
@@ -149,8 +153,9 @@ body {
 
 
 .relax__slider-options{
-	width: 1200px;
-	margin: 0 auto;
+	width: 1180px;
+	padding: 0 10px;
+	margin: auto;
 	text-align: center;
 }
 
@@ -167,9 +172,10 @@ body {
 }
 
 .relax__slider-options-item{
-	width: 1200px;
+	width: 1180px;
+	padding: 0 10px;
 	min-height: 400px;
-	margin: 0 auto;
+	margin: auto;
 	background-image: url(../img/bg/healthy-rest__bg.png);
 	background-repeat: no-repeat;
 	background-position: center -20px;
@@ -177,10 +183,9 @@ body {
 
 .relax__slider-options-list{
 	width: 780px;
-	margin: 0 auto;
+	margin: auto;
 	display: flex;
 	justify-content:space-between;
-	padding-left: 0;
 }
 
 .relax__slider-options-list-container{
@@ -217,8 +222,9 @@ body {
 }
 
 .gallery{
-	width: 1200px;
-	margin: 0 auto;
+	width: 1180px;
+	padding: 0 10px;
+	margin: auto;
 }
 
 .feedback-slide-btn{
@@ -314,7 +320,8 @@ padding-bottom: 30px;
 
 .offers__slider-wrapper{
 	margin: auto;
-	width: 1200px;
+	width: 1180px;
+	padding: 0 10px;
 }
 
 .offers__title{
@@ -374,7 +381,8 @@ padding-bottom: 30px;
 }
 
 .pass{
-	width: 1200px;
+	width: 1180px;
+	padding: 0 10px;
 	margin: auto;
 	text-align: center;
 }
@@ -388,14 +396,15 @@ padding-bottom: 30px;
 }
 /*-----Pass block-------*/
 .transport{
-	width: 1200px;
+	width: 1180px;
+	padding: 0 10px;
 	margin:auto;
 	margin-top: 50px;
 	margin-bottom: 70px;
 }
 
 .transport__list{
-	margin:0 auto;
+	margin: auto;
 	display: flex;
 	justify-content:center;
 	padding-left: 0;
@@ -525,7 +534,8 @@ padding-bottom: 30px;
 }
 
 .footer__inner{
-	max-width: 1200px;
+	max-width: 1180px;
+	padding: 0 10px;
 	margin: auto;
 	display:flex;
 	justify-content:space-between;
@@ -561,7 +571,8 @@ padding-bottom: 30px;
 /*----Single room---------------*/
 
 .about-room{
-	width: 1200px;
+	width: 1180px;
+	padding: 0 10px;
 	margin: auto;
 	margin-bottom: 50px;
 }
@@ -653,7 +664,7 @@ padding-bottom: 30px;
 	text-align: center;	
 	color: #fff;
 	padding-top: 50px;
-
+	margin-bottom: 50px;
 }
 
 .numbers-promo-block__title{
@@ -671,49 +682,75 @@ padding-bottom: 30px;
 	font-weight: 300;
 }
 
-.categories-list{
+.categories{
 	margin: auto;
 	text-align: center;
 }
 
-.categories-list__title{
+.categories__inner{
+	max-width: 1180px;
+	padding: 0 10px;
+	margin: auto;
+}
+
+.categories__list{
+	width: 100%;
+	display: block;
+}
+
+.categories__item{
+	width: 100%;
+	border: 1px solid #ebebeb;
+    background-color: #fafafa;
+    min-height: 300px;
+    margin-bottom: 38px;
+    overflow: hidden;
+    text-align: left;
+    position: relative;
+}
+
+.categories__title{
 	font-family: 'PT Serif caption';
 	font-size: 30px;
 	font-weight: normal;
-}
-
-.categories-list__item{
-	max-width: 1200px;
-	min-height: 310px;
-	margin: auto;
 	margin-bottom: 40px;
-	border:1px solid #ebebeb;
-	background-color: #fafafa;
-	overflow: hidden;
 }
 
-.categories-list__item-desc{
-	width: 600px;
-	background-color: #fafafa;
-	font-size: 0;
-	float: left;
+.categories__item-img{
+	max-width: 600px;
+	display: inline-block;
+	height: 100%;
+	top: 0;
+	right: 0;
+	position: absolute;
+}
+
+.categories__item-img img{
+	width: 100%;
+}	
+
+.categories__item-desc{
+	max-width: 600px;
+	text-align: left;
 	display: inline-block;
 }
 
-.categories-list__item-desc-text{
-	text-align: left;
-	padding-left: 110px;
-	margin-top: 33px;
-	margin-bottom: 0;
-	font-size: 14px;
+.price-info{
+	width: 600px;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 25px;
 }
 
-.categories-list__item-order{
-	text-align: left;
-	padding-left: 110px;
-	padding-bottom: 62px;
-	padding-top: 40px;
+.categories__item-desc-text{
+	display: block;
+	padding: 0px 100px;
+	margin-bottom: 38px;
+}
+
+.categories__item-order{
 	font-size: 14px;
+	padding: 0px 100px;
 }
 
 .more-btn{
@@ -734,25 +771,13 @@ padding-bottom: 30px;
 	right: 0;
 }
 
-.categories-list__item-image{
-	max-width: 600px;
-	height: 310px;
-	overflow: hidden;
-	display: inline-block;
-	font-size: 0;
-	float: right;
-}
-
-.categories-list__item-image img{
-	width: 104%;
-	background-size: cover;
-}
 
 /*-----------FORM-------------*/
 
 
 .container{
-	max-width: 1200px;
+	width: 1180px;
+	padding: 0 10px;
 	margin: auto;
 	text-align: center;
 }
@@ -777,8 +802,6 @@ padding-bottom: 30px;
 .bg--grey{
   background-color: #f3f3f3;
 }
-
-/*---------FORM----------*/
 
 .step-block{
 	margin: auto;
@@ -983,6 +1006,8 @@ input:checked + .cottage-type__item-title:after{
 	position: relative;
 }
 
+
+
 .house-desc__list:before{
 	content: '';
 	position: absolute;
@@ -993,6 +1018,28 @@ input:checked + .cottage-type__item-title:after{
 	left: 85px;
 	background-repeat: no-repeat;
 }
+
+.house-decs:nth-child(3)
+.house-desc__list:before{
+	background-image: url(../img/bg/Triangle.png);
+	left: 280px;
+}
+
+.house-decs:nth-child(4)
+.house-desc__list:before{
+	background-image: url(../img/bg/Triangle.png);
+	left: 475px;
+}
+
+.house-decs:nth-child(5)
+.house-desc__list:before{
+	background-image: url(../img/bg/Triangle.png);
+	left: 670px;
+}
+
+
+
+
 
 .house-desc__list-item{
 	display: inline-block;
@@ -1310,7 +1357,7 @@ input:checked + .payment-on-place__choise:before{
 
 .order-button{
 	margin: auto;
-	max-width: 780px;
+	width: 780px;
 	text-transform: uppercase;
 	color: #fff;
 	text-decoration: none;
@@ -1319,7 +1366,12 @@ input:checked + .payment-on-place__choise:before{
 	background-color: #0ab89d;
 	margin-top: 50px;
 	margin-bottom: 25px;
-	
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-transform: uppercase;	
+	font-family: 'Fira Sans';
+	font-size: 14px;
 }
 
 
